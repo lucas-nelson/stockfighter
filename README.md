@@ -2,6 +2,9 @@
 
 My www.stockfighter.io solution (Ember.js front-end)
 
+Big thank you to Semaphore for their 
+[Ember tutorial](https://semaphoreci.com/community/tutorials/test-driving-ember-js-models).
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
