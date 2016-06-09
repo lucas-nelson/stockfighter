@@ -1,1 +1,10 @@
-{{order-list orders=model}}
+<h1>Orders</h1>
+
+<div class="well">
+  <ul class="nav nav-pills">
+    {{#nav-link-to "orders.index"}}List all{{/nav-link-to}}
+    {{#nav-link-to "orders.new"}}Create a new order{{/nav-link-to}}
+  </ul>
+</div>
+
+{{outlet}}
