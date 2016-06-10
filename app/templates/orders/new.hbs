@@ -1,4 +1,4 @@
-<form>
+<form {{action 'createOrder' model on='submit'}}>
   <div class="form-group">
     <label for="account">Account</label>
     {{input autofocus class="form-control" type="text" value=model.account}}
@@ -7,7 +7,7 @@
     {{/each}}
   </div>
 
-  <button class="btn btn-primary" type="submit" {{action 'createOrder' model}}>Create</button>
+  <button class="btn btn-primary" type="submit">Create</button>
 </form>
 
 {{#if responseMessage}}
