@@ -1,11 +1,11 @@
 <form {{action 'createOrder' model on='submit'}}>
-  <div class="form-group">
-    <label for="account">Account</label>
-    {{input autofocus class="form-control" type="text" value=model.account}}
-    {{#each model.errors.account as |error|}}
-      <span class="help-block">{{error.message}}</span>
-    {{/each}}
-  </div>
+  {{form-input model=model name='account' type='text'}}
+  {{form-input model=model name='direction' type='text'}}
+  {{form-input model=model name='orderType' type='text'}}
+  {{form-input model=model name='price' type='number'}}
+  {{form-input model=model name='quantity' type='number'}}
+  {{form-input model=model name='symbol' type='text'}}
+  {{form-input model=model name='venue' type='text'}}
 
   <button class="btn btn-primary" type="submit">Create</button>
 </form>

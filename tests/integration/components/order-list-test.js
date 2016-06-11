@@ -5,6 +5,7 @@ import { makeList, manualSetup } from 'ember-data-factory-guy';
 moduleForComponent('order-list', 'Integration | Component | order list', {
   integration: true,
 
+  // make factory-guy work in an integration test
   beforeEach: function () {
     manualSetup(this.container);
   }

@@ -1,0 +1,5 @@
+<label for="input-{{name}}">{{name}}</label>
+{{input class='form-control' id=(concat 'input-' name) type=type value=value}}
+{{#each errors as |error|}}
+  <span class="help-block">{{error.message}}</span>
+{{/each}}

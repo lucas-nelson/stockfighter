@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.createRecord('order', { direction: 'buy' });
+    return this.store.createRecord('order');
   },
 
   actions: {
